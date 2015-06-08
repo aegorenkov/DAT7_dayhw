@@ -1,4 +1,4 @@
-#Homework for DAT7 class 2
+#Homework for DAT7 Class 2
 
 1. **Using `chipotle.tsv` in the `data` subdirectory:**
 
@@ -60,4 +60,13 @@
     We conclude, based on this sample, black beans are ordered more often than pinto beans with a chicken burrito.
     
 2. **Make a list of all of the CSV or TSV files in the DAT7 repo (using a single command). Think about how wildcard characters can help you with this task.**
+   ```
+   find . -name *.*sv
+   ```
+   ./data/chipotle.tsv, ./data/sms.tsv, ./data/airlines.csv
+   
 3. **Count the number of occurrences of the word 'dictionary' (regardless of case) across all files in the DAT7 repo.**
+   ```
+   grep -ir "dictionary" . | wc -l
+   ```
+   There are 15 occurrences of the word dictionary in the DAT7 repo.
