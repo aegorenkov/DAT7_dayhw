@@ -72,3 +72,22 @@
    grep -ir "dictionary" . | wc -l
    ```
    There are 15 occurrences of the word dictionary in the DAT7 repo.
+   
+4. **Optional: Use the the command line to discover something "interesting" about the Chipotle data.**
+
+The top 10 ordered items are:
+```
+tail -n +2 chipotle.tsv |cut -f 3,3 |sort |uniq -c|sort -nr |head
+```
+Number of orders | Item name
+--- | ---
+726 | Chicken Bowl
+    553 | Chicken Burrito
+    479 | Chips and Guacamole
+    368 | Steak Burrito
+    301 | Canned Soft Drink
+    211 | Steak Bowl
+    211 | Chips
+    162 | Bottled Water
+    115 | Chicken Soft Tacos
+    110 | Chips and Fresh Tomato Salsa
