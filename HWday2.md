@@ -15,6 +15,8 @@
     
     * choice_description lists the customizations and ingredients made by the consumer for a given item in an order
     
+    * item_price refers to the price of the food item that is represented by the row
+    
     **How many orders do there appear to be?**
     ```
     tail chipotle.tsv
